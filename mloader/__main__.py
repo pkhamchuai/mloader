@@ -105,7 +105,7 @@ Examples:
     "--raw",
     "-r",
     is_flag=True,
-    default=False,
+    default=True,
     show_default=True,
     help="Save raw images",
     envvar="MLOADER_RAW",
