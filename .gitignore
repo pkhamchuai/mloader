@@ -56,3 +56,5 @@ venv/
 \[*\]*\(*\)/
 *.egg-info
 mloader_downloads/
+.venv/
+token.txt
