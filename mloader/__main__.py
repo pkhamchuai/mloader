@@ -38,6 +38,9 @@ def validate_urls(ctx: click.Context, param, value):
 
     res = {"viewer": set(), "titles": set()}
     for url in value:
+        if url.isdigit():
+            res["viewer"].add(int(url))
+            continue
         match = re.search(r"(\w+)/(\d+)", url)
         if not match:
             raise click.BadParameter(f"Invalid url: {url}")
